@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sahrul Gunawan Cyber - Database</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<style>
+#myInput {
+  background-image:
+  url('/img/cari.png');
+
+  background-position: 5px 0px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #FF9CDA;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+<center>
+<h2>WELCOME TO OUR WEBSITE </h2>
+</center>
+<!--------------------------------------------------------------------------------->
+<input type="text" id="myInput"
+onkeyup="myFunction()" placeholder=
+" Cari Yang Kamu Ingin Cari Klik Disini"title="Type in a name">
+<!--------------------------------------------------------------------------------->
+<ul id="myUL">
+<!--------------------------------------------------------------------------------->
+<li><a href="#" class="header">ARMHF</a></li>
+<li><a href="#">Alligator</a></li>
+<li><a href="#">Albatross</a></li>
+<li><a href="#">Antelope</a></li>
+<li><a href="#">Alligator</a></li>
+<li><a href="#">Albatross</a></li>
+<li><a href="#">Antelope</a></li>
+<li><a href="#">Alligator</a></li>
+<li><a href="#">Albatross</a></li>
+<li><a href="#">Antelope</a></li>
+<!--------------------------------------------------------------------------------->
+<li><a href="#" class="header">AMD64</a></li>
+<li><a href="#">Baboon</a></li>
+<li><a href="#">Blue Whale</a></li>
+<li><a href="#">Baboon</a></li>
+<li><a href="#">Blue Whale</a></li>
+<li><a href="#">Baboon</a></li>
+<li><a href="#">Blue Whale</a></li>
+<li><a href="#">Baboon</a></li>
+<li><a href="#">Blue Whale</a></li>
+<li><a href="#">Baboon</a></li>
+<li><a href="#">Blue Whale</a></li>
+<!--------------------------------------------------------------------------------->
+<li><a href="#" class="header">AARCH64</a></li>
+<li><a href="#">Cheetah</a></li>
+<li><a href="#">Chimpanzee</a></li>
+<li><a href="#">Camel</a></li>
+<li><a href="#">Cheetah</a></li>
+<li><a href="#">Chimpanzee</a></li>
+<li><a href="#">Camel</a></li>
+<li><a href="#">Cheetah</a></li>
+<li><a href="#">Chimpanzee</a></li>
+<li><a href="#">Camel</a></li>
+<li><a href="#">Cheetah</a></li>
+<li><a href="#">Chimpanzee</a></li>
+<li><a href="#">Camel</a></li>
+<li><a href="#">Cheetah</a></li>
+<li><a href="#">Chimpanzee</a></li>
+<li><a href="#">Camel</a></li>
+<!--------------------------------------------------------------------------------->
+</ul>
+
+<!--------------------------------------------------------------------------------->
+<script>
+ /* Declare variables */  
+
+function myFunction() {
+var input, filter, ul, li, a, i;
+input=document.getElementById("myInput");
+filter = input.value.toUpperCase();
+ul = document.getElementById("myUL");
+li = ul.getElementsByTagName("li");
+
+
+ /* Loop through all list items, and hide
+ those who don't match the search query */ 
+
+for (i = 0; i < li.length; i++) {
+a = li[i].getElementsByTagName("a")[0];
+
+if (a.innerHTML.toUpperCase()
+.indexOf(filter) > -1) {
+  li[i].style.display = "";
+
+    } else {
+      li[i].style.display = "none";
+
+        }
+    }
+}
+
+</script>
+<!--------------------------------------------------------------------------------->
+</body>
+</html>
